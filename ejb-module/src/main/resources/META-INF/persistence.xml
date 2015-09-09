@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
         version="2.1">
 
-    <persistence-unit name="MyPersistenceUnit" transaction-type="JTA">
+    <persistence-unit name="MyPersistenceUnit" transaction-type="JTA"><!--Deze transaction type duidt erop dat je werkt met een transactie type(in dit geval JTA) aanwezig op de application server -->
         <jta-data-source>java:/MyDataSource</jta-data-source>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />

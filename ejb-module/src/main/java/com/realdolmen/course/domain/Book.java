@@ -27,6 +27,7 @@ public class Book implements Serializable {
     protected Book() {
     }
 
+    //Mainly serves the purpose of unit testing
     public Book(String title, String author, Genre genre) {
         this.title = title;
         this.author = author;
