@@ -3,4 +3,5 @@
     <book id="2000" author="Aldous Huxley" title="Brave New World" genre="fiction"/>
     <book id="3000" author="Bram Stoker" title="Dracula" genre="fiction"/>
     <passenger ssn="blabi" firstName = "Joske" lastName = "Jos" frequentFlyerMiles = "58000" />
+    <passenger ssn="blabbii" firstName = "Jeanine" lastName = "Josette" frequentFlyerMiles="572" />
 </dataset>
