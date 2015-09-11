@@ -1,5 +1,10 @@
 package com.realdolmen.course.persistence;
 
+import com.realdolmen.course.domain.Address;
+import com.realdolmen.course.domain.CreditCard;
+import com.realdolmen.course.domain.Passenger;
+import com.realdolmen.course.domain.*;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -20,16 +25,18 @@ public class PassengerPersistenceTest extends DataSetPersistenceTest {
     @Rule
     public ExpectedException expector = ExpectedException.none();
 
-  /*  @Test
+    @Test
     public void passengerCanBePersisted() throws Exception {
-        Calendar cal = Calendar.getInstance();
-        cal.
-
         List<CreditCard> creditCards = new ArrayList<>();
         creditCards.add(new CreditCard("14521025", "12-18", 7785415, CreditCardType.AMEX));
-        Passenger passenger = new Passenger("Joske", "Jos", "14erea414", 41258, new Calendar(LocalDate.of(1978, 11, 24).format(DateTimeFormatter.ISO_LOCAL_DATE)), new Date(LocalDate.of(2015,9,8).format(DateTimeFormatter.ISO_DATE_TIME)),
+        Passenger passenger = new Passenger("Joske", "Jos", "14erea414", 41258, LocalDate.of(1985,11,12) ,LocalDate.of(2015,9,11) ,
                 PassengerType.OCCASIONAL, creditCards, new Address("BlablaStraat", null, "BlablaCity", "5214", "Belgium"), null);
         entityManager().persist((passenger));
         assertNotNull(passenger.getId());
-    }*/
+    }
+
+    @Test
+    public void passengerCanBeRetrieved() throws Exception {
+    }
+
 }

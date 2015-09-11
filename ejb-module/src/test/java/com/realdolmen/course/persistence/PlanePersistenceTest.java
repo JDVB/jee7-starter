@@ -1,5 +1,6 @@
 package com.realdolmen.course.persistence;
 
+import com.realdolmen.course.domain.Plane;
 import org.junit.Test;
 
 /**

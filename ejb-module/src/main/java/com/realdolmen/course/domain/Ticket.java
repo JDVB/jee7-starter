@@ -1,4 +1,4 @@
-package com.realdolmen.course.persistence;
+package com.realdolmen.course.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -11,13 +11,13 @@ public class Ticket implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Basic(optional = false)
     private double price;
-    private Flight flight;
     @ManyToOne
     private Passenger passenger;
-    @OneToMany(mappedBy = "ticketsOut")
+    @ManyToOne
     private Flight flightOut;
-    @OneToMany(mappedBy = "ticketsReturn")
+    @ManyToOne
     private Flight flightReturn;
 
     //Used by JPA
@@ -36,6 +36,9 @@ public class Ticket implements Serializable{
     }
 
     public void setPrice(double price) {
+        if(price < 0) {
+           // throw new IllegalArgumentException("The price of a ticket can not be negative");
+        }
         this.price = price;
     }
 }

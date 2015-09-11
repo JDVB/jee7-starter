@@ -2,5 +2,6 @@
     <book id="1000" author="George Orwell" title="Nineteen Eighty Four" genre="fiction"/>
     <book id="2000" author="Aldous Huxley" title="Brave New World" genre="fiction"/>
     <book id="3000" author="Bram Stoker" title="Dracula" genre="fiction"/>
-    <passenger firstName = "Joske" lastName = "Jos" ssn = "blabla" age = "74" dateOfBirth = "1985-11-7" passengerType = "OCCASIONAL" lastFlight = "2015-7-14" frequentFlyerMiles = "7541" />
+    <passenger firstName = "Joske" lastName = "Peters" ssn = "blabla" age = "74" dateOfBirth = "1985-11-7" passengerType = "OCCASIONAL" lastFlight = "2015-7-14" frequentFlyerMiles = "7541"/>
+    <passenger firstName = "Josette" lastName = "Jansens" ssn = "blabli" age = "41" dateOfBirth = "1984-11-7" passengerType = "OCCASIONAL" lastFlight = "2015-7-14" frequentFlyerMiles = "300"/>
 </dataset>

@@ -1,4 +1,4 @@
-package com.realdolmen.course.persistence;
+package com.realdolmen.course.domain;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -14,8 +14,6 @@ public class Plane {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String type;
-    @OneToMany
-    private List<Flight> flights = new ArrayList<>();
 
     //Used by JPA
     protected Plane() {
